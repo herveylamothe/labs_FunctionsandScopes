@@ -9,8 +9,8 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+let myAge = (ageNow, numYears ) => {
+  return   ageNow + numYears     
 }
 
 
@@ -44,9 +44,17 @@ This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
-function subtract(a,b) {
-    
-}
+
+let subtract = (num1,num2)  => {
+    if(num1 === NaN || num2 === NaN) {
+        return 'invalid input'
+    } 
+    else {
+        return num1 - num2;
+    }
+  }
+  
+  console.log(subtract(6,3))
 
 /******************
 Area of A Circle
